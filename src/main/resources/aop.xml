@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="hostess" class="ioc.Hostess" scope="prototype">
+        <property name="dog" ref="dog1"></property>
+    </bean>
+
+    <bean id="dog1" class="ioc.Taidi" scope="prototype"></bean>
+
+    <!--<bean id="dog2" class="ioc.Labuladuo" scope="prototype"></bean>-->
+
+    <bean id="humanHandler" class="aop.HumanHandler">
+        <property name="target" ref="hostess"></property>
+    </bean>
+
+    <bean id="humanProxy" class="aop.ProxyFactoryBean">
+        <property name="handlerName" ref="humanHandler"></property>
+        <property name="target" ref="hostess"></property>
+    </bean>
+
+
+</beans>

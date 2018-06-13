@@ -7,8 +7,17 @@ public class Hostess implements Master{
 
     private Dog dog;
 
+    public void setDog(Dog dog) {
+        this.dog = dog;
+    }
+
     public void walkDog() {
-        System.out.println("遛狗");
+        System.out.println("遛狗开始");
+        dog.bark();
+    }
+
+    public void shopping() {
+        System.out.println("购物");
     }
 
     @Override

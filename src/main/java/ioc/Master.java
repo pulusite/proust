@@ -5,4 +5,5 @@ package ioc;
  */
 public interface Master {
     void walkDog();
+    void shopping();
 }
