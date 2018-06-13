@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="hostess" class="ioc.Hostess">
+        <!--<property name="name" value="liwenli"></property>-->
+        <property name="dog" ref="taidi_dog"></property>
+    </bean>
+
+    <bean id="taidi_dog" class="ioc.Taidi"></bean>
+
+    <!--<bean id="Labuladuo_dog" class="com.Labuladuo"></bean>-->
+</beans>
