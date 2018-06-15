@@ -49,7 +49,7 @@ public class MyExcutor implements Excutor{
 	  
 	    private Connection getConnection() {  
 	        try {  
-	            Connection connection =xmlConfiguration.build("DBconfig.xml");
+	            Connection connection =xmlConfiguration.build("db/DBconfig.xml");
 	            return connection;  
 	        } catch (Exception e) {  
 	            e.printStackTrace();  

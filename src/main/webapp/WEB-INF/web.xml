@@ -8,7 +8,7 @@
 		<servlet-class>mvc.servlet.MyDispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>application.properties</param-value>
+			<param-value>mvc.properties</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

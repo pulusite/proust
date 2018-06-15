@@ -20,7 +20,7 @@ public class MyMapperProxy implements InvocationHandler{
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		MapperBean readMapper = myConfiguration.readMapper("UserMapper.xml");
+		MapperBean readMapper = myConfiguration.readMapper("db/UserMapper.xml");
 		//是否是xml文件对应的接口
 		if(!method.getDeclaringClass().getName().equals(readMapper.getInterfaceName())){
 			return null;  
