@@ -1,4 +1,4 @@
-package soa;
+package soa.schema;
 
 import org.w3c.dom.Element;
 import org.springframework.beans.factory.config.BeanDefinition;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns="http://www.youierdong.com/schema/soa"
-            xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.youierdong.com/schema/soa"
+<xsd:schema xmlns="http://www.litart.cc/schema/soa"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.litart.cc/schema/soa"
             elementFormDefault="qualified" attributeFormDefault="unqualified">
     <!-- 注册标签 -->
     <xsd:element name="registry">

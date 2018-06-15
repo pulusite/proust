@@ -1,4 +1,4 @@
-package soa;
+package soa.schema;
 
 /**
  * Created by zhangdong on 2018/6/15.

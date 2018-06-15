@@ -1,4 +1,4 @@
-package soa;
+package soa.schema;
 
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.beans.factory.xml.ParserContext;

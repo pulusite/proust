@@ -1,3 +1,3 @@
-http\://www.youierdong.com/schema/soa=soa.SOANamespaceHandlers
+http\://www.litart.cc/schema/soa=soa.schema.SOANamespaceHandlers
 
-#注意：www.youierdong.com/schema/soa与xsd的配置对应
+#注意：www.litart.cc/schema/soa与xsd的配置对应

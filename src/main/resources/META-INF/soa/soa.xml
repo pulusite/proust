@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:proust="http://www.litart.cc/schema/soa"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:erdong="http://www.youierdong.com/schema/soa"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
-	   http://www.youierdong.com/schema/soa
-	   http://www.youierdong.com/schema/soa.xsd"
+	   http://www.litart.cc/schema/soa
+	   http://www.litart.cc/schema/soa.xsd"
        default-lazy-init="true">
 
-    <bean id="userServiceImpl" class="soa.SOA_"></bean>
-    <erdong:service interface="com.youi.erdong.test.service.UserService" ref="userServiceImpl"></erdong:service>
-    <erdong:registry  protocol="redis" address="127.0.0.1:6379"></erdong:registry>
-    <erdong:reference id="testServiceImpl3" interface="com.youi.erdong.test.service.UserService" loadbalance="random" protocol="http"></erdong:reference>
-    <erdong:protocol  name="http" port="27017" host="127.0.0.1"></erdong:protocol>
+    <bean id="userServiceImpl" class="soa.UserServiceImpl"></bean>
+    <proust:service interface="soa.UserService" ref="userServiceImpl" protocol="redis"></proust:service>
+    <proust:registry  protocol="redis" address="127.0.0.1:6379"></proust:registry>
+    <proust:reference id="testServiceImpl3" interface="soa.UserService" loadbalance="random" protocol="http"></proust:reference>
+    <proust:protocol  name="http" port="27017" host="127.0.0.1"></proust:protocol>
 
 </beans>

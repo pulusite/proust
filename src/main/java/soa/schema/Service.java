@@ -1,22 +1,15 @@
-package soa;
+package soa.schema;
+
+import org.springframework.context.ApplicationContext;
 
 /**
  * Created by zhangdong on 2018/6/15.
  */
-public class Reference {
+public class Service {
 
-    private String id;
     private String intf;
-    private String loadbalance;
+    private String ref;
     private String protocol;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getIntf() {
         return intf;
@@ -26,12 +19,12 @@ public class Reference {
         this.intf = intf;
     }
 
-    public String getLoadbalance() {
-        return loadbalance;
+    public String getRef() {
+        return ref;
     }
 
-    public void setLoadbalance(String loadbalance) {
-        this.loadbalance = loadbalance;
+    public void setRef(String ref) {
+        this.ref = ref;
     }
 
     public String getProtocol() {
@@ -40,6 +33,10 @@ public class Reference {
 
     public void setProtocol(String protocol) {
         this.protocol = protocol;
+    }
+
+    public static ApplicationContext getApplication(){
+        return null;
     }
 
 }
