@@ -1,2 +1,2 @@
 # proust
-spring,dubbo,activemq,mybatis,zookeeper
+spring(ioc,aop,mvc,transaction),dubbo,activemq,mybatis,zookeeper
