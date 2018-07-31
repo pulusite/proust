@@ -29,18 +29,12 @@ public class HumanHandler implements InvocationHandler {
 
     private void before() {
         // 前置任务
-        System.out.println("[代理执行前置任务]整理着装");
-        System.out.println("[代理执行前置任务]带上钥匙");
-        System.out.println("");
-        System.out.println("[核心业务开始]*****************");
+        System.out.println("[代理执行前置任务]");
     }
 
     private void after() {
         // 后置任务
-        System.out.println("[核心业务结束]*****************");
-        System.out.println("");
-        System.out.println("[代理执行后置任务]开门");
-        System.out.println("[代理执行后置任务]换鞋");
+        System.out.println("[代理执行后置任务]");
     }
 
 }

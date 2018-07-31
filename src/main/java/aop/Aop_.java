@@ -12,11 +12,6 @@ public class Aop_ {
 
         Master master = (Master)context.getBean("humanProxy");
 
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-
         master.shopping();
         master.walkDog();
 

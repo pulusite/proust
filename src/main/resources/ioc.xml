@@ -5,7 +5,9 @@
         <property name="dog" ref="taidi_dog"></property>
     </bean>
 
-    <bean id="taidi_dog" class="ioc.Taidi"></bean>
+    <bean id="taidi_dog" class="ioc.Taidi">
+        <property name="name" value="liwenli's dog"></property>
+    </bean>
 
     <!--<bean id="Labuladuo_dog" class="com.Labuladuo"></bean>-->
 </beans>

@@ -11,9 +11,6 @@ public class Ioc_ {
         ApplicationContext context = new ClassPathXmlApplicationContext("ioc.xml");
         Master master = (Master)context.getBean("hostess");
 
-        System.out.println();
-        System.out.println();
-        System.out.println();
         System.out.println("***********************************");
         master.walkDog();
     }

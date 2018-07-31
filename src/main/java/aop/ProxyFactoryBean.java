@@ -22,7 +22,7 @@ public class ProxyFactoryBean {
 //    }
 
     //返回本类的一个实例
-    public Object getProxyBean() throws IllegalArgumentException, InstantiationException, IllegalAccessException, ClassNotFoundException{
+    public Object getProxyBean() throws IllegalArgumentException{
         Object obj = Proxy.newProxyInstance(
                 target.getClass().getClassLoader(),
                 target.getClass().getInterfaces(),

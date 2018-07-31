@@ -44,7 +44,13 @@ public class ClassPathXmlApplicationContext implements ApplicationContext {
                 //拼接出注入方法
                 String setMethod = "set" + (propertyName.substring(0, 1)).toUpperCase() + propertyName.substring(1, propertyName.length());
                 System.out.println("自动调用注入方法" + setMethod);
+                //value
+                String set_name = propertyNode.attributeValue("value");
+                System.out.println("需要注入的属性名" + set_name);
 
+                String di_value = set_name;
+                System.out.println("注入的属性值" + di_value);
+                //ref
                 String set_object_name = propertyNode.attributeValue("ref");
                 System.out.println("需要注入的对象名" + set_object_name);
 
@@ -55,7 +61,12 @@ public class ClassPathXmlApplicationContext implements ApplicationContext {
 
                 for (Method m : methods) {
                     if (setMethod.equals(m.getName())) {
-                        m.invoke(obj, di_object);
+                        if (di_value!=null){
+                            m.invoke(obj, di_value);
+                        }
+                        if (di_object!=null){
+                            m.invoke(obj, di_object);
+                        }
                         break;
                     }
                 }
