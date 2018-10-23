@@ -12,4 +12,4 @@ spring(ioc,aop,mvc,transaction),dubbo,activemq,mybatis,zookeeper
 刷脸支付
 脸部识别算法
 
-整个支付的组织
+整个支付的组织架构
