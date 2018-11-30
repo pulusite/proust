@@ -11,7 +11,8 @@ public class Test {
 
     public synchronized static void selctData() {
         PooledConnection connection = poolImpl.getConnection();
-        ResultSet rs = connection.queryBysql("SELECT * FROM user");
+        ResultSet rs = connection.queryBysql("" +
+                " * FROM user");
         try {
             while (rs.next()) {
                 System.out.println(rs.getString("ID") + "\t\t");
