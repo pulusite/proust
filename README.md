@@ -1,7 +1,6 @@
 # proust
-待删除
 
-spring(ioc,aop,mvc,transaction),dubbo,activemq,mybatis,zookeeper
+待删除spring(ioc,aop,mvc,transaction),dubbo,activemq,mybatis,zookeeper
 
 工作相关
 
