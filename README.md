@@ -14,3 +14,6 @@ spring(ioc,aop,mvc,transaction),dubbo,activemq,mybatis,zookeeper
 token
 
 整个支付的组织架构
+
+
+待删除
