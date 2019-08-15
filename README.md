@@ -1,4 +1,6 @@
 # proust
+待删除
+
 spring(ioc,aop,mvc,transaction),dubbo,activemq,mybatis,zookeeper
 
 工作相关
@@ -16,4 +18,4 @@ token
 整个支付的组织架构
 
 
-待删除
+
